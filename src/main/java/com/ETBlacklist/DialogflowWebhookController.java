@@ -1,5 +1,7 @@
 package com.ETBlacklist;
 
+
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -10,12 +12,13 @@ import java.util.Map;
 @RequestMapping("/webhook")
 public class DialogflowWebhookController {
 
-
-
     @PostMapping
-    public ResponseEntity<String> handleWebhook(@RequestBody Map<String, Object> request) 
-    {
+    public ResponseEntity<Map<String, String>> handleWebhook(@RequestBody Map<String, Object> request) {
         System.out.println("Received Request: " + request);
-        return ResponseEntity.ok("Success");
+
+        Map<String, String> response = new HashMap<>();
+        response.put("fulfillmentText", "Hello from Spring Boot Webhook!");
+
+        return ResponseEntity.ok(response);
     }
 }
