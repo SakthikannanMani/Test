@@ -12,7 +12,7 @@
 	<groupId>ETBlacklist</groupId>
 	<artifactId>ETBlacklist</artifactId>
 	<version>LATEST</version>
-	<packaging>war</packaging>
+    <packaging>jar</packaging>
 	<name>ETBlacklist</name>
 	<description>ETBlacklist Application project for Spring Boot</description>
 

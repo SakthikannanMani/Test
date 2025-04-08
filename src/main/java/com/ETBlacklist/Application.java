@@ -1,6 +1,4 @@
 package com.ETBlacklist;
-
-
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
@@ -22,6 +20,4 @@ public class Application  {
 		System.out.println("Appliction Started");
 
 	}
-//	
-
 }
